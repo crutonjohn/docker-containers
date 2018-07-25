@@ -11,6 +11,9 @@ RUN zypper --non-interactive ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/
 	java-1_8_0-openjdk-headless \
 	libdbus-1-3 \
 	packman:ffmpeg \
+	flac \
+	lame \
+	sox \
 	tar \
 	timezone \
   && curl -skL https://github.com/just-containers/s6-overlay/releases/download/v${s6_overlay_version}/s6-overlay-amd64.tar.gz -o /tmp/s6-overlay-amd64.tar.gz \
